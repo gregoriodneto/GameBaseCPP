@@ -35,5 +35,22 @@ int main()
 
     cout << "Player morreu!" << endl;
 
+    int ataque = 20;
+    int defesa = 8;
+
+    int dano = ataque - defesa;
+
+    vida -= dano;
+
+    if (dano < 0) {
+        dano = 0;
+    }
+
+    cout << "Ataque: " << ataque << endl;
+    cout << "Defesa: " << defesa << endl;
+    cout << "Dano causando: " << dano << endl;
+
+    cout << "Vida atualizada do Player: " << vida << endl;
+
     return 0;
 }
