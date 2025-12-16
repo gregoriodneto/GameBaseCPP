@@ -63,5 +63,34 @@ int main()
         cout << "Player não pode atacar!" << endl;
     }
 
+    // Desafio 1: COMBATE SIMPLES (FASE 1)
+    cout << "Desafio 1: COMBATE SIMPLES (FASE 1)" << endl;
+
+    int vidaDesafio1 = 50;
+    int ataqueDesafio1 = 18;
+    int defesaDesafio1 = 6;
+    int manaDesafio1 = 5;
+    bool estaVivoDesafio1 = true;
+
+    for (int frameDesafio1 = 1; frameDesafio1 <= 10; frameDesafio1++)
+    {
+        cout << "Preparando combate... Frame " << frameDesafio1 << endl;
+    }
+
+    int danoDesafio1 = ataqueDesafio1 - defesaDesafio1;
+    if (danoDesafio1 < 0) danoDesafio1 = 0;
+
+    while (vidaDesafio1 > 0 && danoDesafio1 > 0) {
+        cout << "Vida atual: " << vidaDesafio1 << endl;
+        vidaDesafio1 -= danoDesafio1;
+        if (vidaDesafio1 < 0) vidaDesafio1 = 0;
+    }
+
+    cout << "Combate finalizado!" << endl;
+
+    estaVivoDesafio1 = (vidaDesafio1 > 0);
+    if (estaVivoDesafio1) cout << "Player pode continuar lutando!" << endl;
+    else cout << "Player foi derrotado!" << endl;
+
     return 0;
 }
