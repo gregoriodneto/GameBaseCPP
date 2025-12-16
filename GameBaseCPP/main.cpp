@@ -25,5 +25,15 @@ int main()
         cout << "Frame do jogo: " << frame << endl;
     }
 
+    int turno = 1;
+    while (vida > 0) {
+        cout << "Turno " << turno << " - Vida: " << vida << endl;
+        cout << "Player levou dano! Vida atual: " << vida << endl;
+        turno++;
+        vida -= 5;
+    }
+
+    cout << "Player morreu!" << endl;
+
     return 0;
 }
