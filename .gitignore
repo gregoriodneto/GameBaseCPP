@@ -1,0 +1,44 @@
+# ===== Visual Studio =====
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ===== Build folders =====
+Debug/
+Release/
+x64/
+x86/
+Build/
+build/
+
+# ===== Intermediate files =====
+*.obj
+*.idb
+*.pdb
+*.tlog
+*.ilk
+*.log
+
+# ===== Executables =====
+*.exe
+*.out
+*.app
+
+# ===== C++ temp files =====
+*.o
+*.a
+*.lib
+
+# ===== Precompiled headers =====
+*.pch
+
+# ===== CMake =====
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# ===== OS files =====
+Thu
