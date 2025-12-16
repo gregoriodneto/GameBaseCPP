@@ -19,5 +19,11 @@ int main()
         cout << "Continue jogando!" << endl;
     }
 
+    for (int frame = 0; frame <= 9; frame++)
+    {
+        cout << "Atualizando..." << endl;
+        cout << "Frame do jogo: " << frame << endl;
+    }
+
     return 0;
 }
