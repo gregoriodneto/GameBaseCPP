@@ -31,6 +31,7 @@ A ideia é aprender C++ de forma prática, construindo aos poucos um **jogo base
 * ✅ Entrada e saída básica (`cout`)
 * ✅ Condicional `if / else`
 * ✅ Loop `for` (simulação de frames)
+* ✅ Loop `while` (simulação de vida)
 
 ---
 
