@@ -7,6 +7,13 @@ int main()
     float velocidade = 3.2f;
     bool estaVivo = false;
 
+    int turno = 1;
+
+    int ataque = 20;
+    int defesa = 8;
+
+    int mana = 10;
+
     cout << "Vida: " << vida << endl;
     cout << "Velocidade: " << velocidade << endl;
     cout << "Esta vivo? " << estaVivo << endl;
@@ -25,7 +32,7 @@ int main()
         cout << "Frame do jogo: " << frame << endl;
     }
 
-    int turno = 1;
+    
     while (vida > 0) {
         cout << "Turno " << turno << " - Vida: " << vida << endl;
         cout << "Player levou dano! Vida atual: " << vida << endl;
@@ -33,13 +40,9 @@ int main()
         vida -= 5;
     }
 
-    cout << "Player morreu!" << endl;
-
-    int ataque = 20;
-    int defesa = 8;
+    cout << "Player morreu!" << endl;    
 
     int dano = ataque - defesa;
-
     vida -= dano;
 
     if (dano < 0) {
@@ -51,6 +54,14 @@ int main()
     cout << "Dano causando: " << dano << endl;
 
     cout << "Vida atualizada do Player: " << vida << endl;
+
+    estaVivo = (vida > 0);
+    if (estaVivo && mana > 0) {
+        cout << "Player pode atacar!" << endl;
+    }
+    else {
+        cout << "Player não pode atacar!" << endl;
+    }
 
     return 0;
 }
