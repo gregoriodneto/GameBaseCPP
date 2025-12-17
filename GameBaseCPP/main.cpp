@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main()
@@ -13,6 +14,14 @@ int main()
     int defesa = 8;
 
     int mana = 10;
+
+    string nomeJogador;
+
+    cout << "Digite o nome do jogador: " << endl;
+    //cin >> nomeJogador; -> Não permite espaços
+    getline(cin, nomeJogador); // Permite espaços
+
+    cout << "Bem-vindo, " << nomeJogador << "!" << endl;
 
     cout << "Vida: " << vida << endl;
     cout << "Velocidade: " << velocidade << endl;
@@ -91,6 +100,16 @@ int main()
     estaVivoDesafio1 = (vidaDesafio1 > 0);
     if (estaVivoDesafio1) cout << "Player pode continuar lutando!" << endl;
     else cout << "Player foi derrotado!" << endl;
+
+    cout << "\n===== STATUS DO PLAYER =====\n";
+    cout << "Nome: " << nomeJogador << endl;
+    cout << "Vida: " << vidaDesafio1 << endl;
+    cout << "Mana: " << manaDesafio1 << endl;
+
+    if (estaVivoDesafio1) cout << "Estado: Vivo\n";
+    else cout << "Estado: Morto\n";
+
+    cout << "============================\n";
 
     return 0;
 }
