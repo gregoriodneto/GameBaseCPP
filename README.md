@@ -32,6 +32,10 @@ A ideia é aprender C++ de forma prática, construindo aos poucos um **jogo base
 * ✅ Condicional `if / else`
 * ✅ Loop `for` (simulação de frames)
 * ✅ Loop `while` (simulação de vida)
+* ✅ operadores aritméticos ( Calcule dano = ataque − defesa.)
+* ✅ operadores lógicos ( Verifique se player está vivo e tem mana.)
+* ✅ cin ( Leia nome do jogador.)
+* ✅ cout ( Exiba status do jogador formatado.)
 
 ---
 
