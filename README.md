@@ -37,6 +37,9 @@ A ideia é aprender C++ de forma prática, construindo aos poucos um **jogo base
 * ✅ cin ( Leia nome do jogador.)
 * ✅ cout ( Exiba status do jogador formatado.)
 
+### 🟦 Fase 2 — FUNÇÕES & DADOS
+* ✅ criar função ( Função takeDamage() que reduz vida.)
+
 ---
 
 ## 📂 Estrutura

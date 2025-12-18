@@ -2,6 +2,13 @@
 #include <string>
 using namespace std;
 
+int takeDamage(int vidaAtual, int dano) {
+    vidaAtual -= dano;
+    if (vidaAtual < 0)
+        vidaAtual = 0;
+    return vidaAtual;
+}
+
 int main()
 {
     int vida = 80;
@@ -91,8 +98,7 @@ int main()
 
     while (vidaDesafio1 > 0 && danoDesafio1 > 0) {
         cout << "Vida atual: " << vidaDesafio1 << endl;
-        vidaDesafio1 -= danoDesafio1;
-        if (vidaDesafio1 < 0) vidaDesafio1 = 0;
+        vidaDesafio1 = takeDamage(vidaDesafio1, danoDesafio1);
     }
 
     cout << "Combate finalizado!" << endl;
